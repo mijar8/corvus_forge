@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <!-- Primary SEO -->
+  <title>Corvus Forge — Landing Pages with Auto-Booking for Local Business</title>
+  <meta name="description" content="Corvus Forge — a web studio building custom-coded landing pages with automated booking systems for local businesses. No templates. No Tilda. Pure results in 7–14 days." />
+  <meta name="author" content="Corvus Forge" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://corvus-forge.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://corvus-forge.com/" />
+  <meta property="og:site_name" content="Corvus Forge" />
+  <meta property="og:title" content="Corvus Forge — Landing Pages with Auto-Booking" />
+  <meta property="og:description" content="Custom-coded landing pages with automated booking for local businesses. Fast, aesthetic, converting." />
+  <meta property="og:image" content="https://corvus-forge.com/corvus-logo.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Corvus Forge — Landing Pages with Auto-Booking" />
+  <meta name="twitter:description" content="Custom-coded landing pages with automated booking for local businesses." />
+  <meta name="twitter:image" content="https://corvus-forge.com/corvus-logo.png" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Corvus Forge",
+    "image": "https://corvus-forge.com/corvus-logo.png",
+    "description": "Web studio building custom-coded landing pages with automated booking systems for local businesses.",
+    "url": "https://corvus-forge.com",
+    "priceRange": "$$",
+    "sameAs": [
+      "https://t.me/gestalter8",
+      "https://www.instagram.com/corvus.forge/"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why clean code instead of WordPress or Tilda?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "WordPress and Tilda sites are bloated with unnecessary plugins and template code. We write everything by hand in pure HTML/CSS/JS. Our sites load in under 2 seconds, score 100% on Google PageSpeed, and have no vulnerable plugin chain to exploit. You own the code — no subscriptions, no lock-in."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the auto-booking work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We integrate Calendly or Cal.com directly into your landing page. Visitors pick a time slot, confirm, and get an automatic reminder — all without you lifting a finger. You just show up for the appointment. Works for fitness coaches, beauty salons, clinics, lawyers, and any appointment-based business."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Typically 7 to 14 days from brief to launch. We run one project at a time, so your task gets our full attention — not a slot between 12 other clients. Timeline depends on scope and how fast you provide content (text, photos)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I edit the content myself after launch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We build clean, commented code and can set up a simple editing system. You can change prices, descriptions, and photos without risking the design or code structure. For ongoing updates, our Support + SEO plan covers it from €29/mo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's included in Support + SEO at €29/mo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Blazing-fast hosting, regular content updates, ongoing speed optimization, local SEO management (Google Business, citations), and monthly performance reports. Your site stays live, fast, and visible — always."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=2" />
+</head>
+
+<body>
+
+  <!-- =====================================================
+       NAVIGATION
+       ===================================================== -->
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="Corvus Forge — home">
+        <img src="corvus-logo.png" alt="Corvus Forge Logo" width="28" height="28" />
+        <span>CORVUS FORGE</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#services">SERVICES</a>
+        <a href="#work">WORK</a>
+        <a href="#process">PROCESS</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <a href="https://t.me/gestalter8" class="btn-nav" target="_blank" rel="noopener" id="nav-cta">
+        LET'S TALK →
+      </a>
+
+      <button class="nav-menu-btn" aria-label="Toggle menu" aria-expanded="false" id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+    <section id="hero" aria-label="Hero">
+
+      <div class="hero-content">
+        <div class="hero-badge reveal" aria-live="polite">
+          <span class="dot"></span>
+          <span data-month-badge data-spots="2/5">2/5 SPOTS — JULY</span>
+        </div>
+
+        <h1 class="reveal reveal-delay-1">
+          We Forge<br>
+          <em>Aesthetic</em><br>
+          Identity.
+        </h1>
+
+        <div class="hero-cta reveal reveal-delay-2">
+          <a href="https://t.me/gestalter8" class="btn-primary" target="_blank" rel="noopener" id="hero-start-btn">
+            START PROJECT →
+          </a>
+          <a href="#work" class="btn-ghost" id="hero-work-btn">
+            VIEW WORK ↓
+          </a>
+        </div>
+
+        <div class="hero-sub reveal reveal-delay-3">
+          Or reach us directly →&nbsp;
+          <a href="https://t.me/gestalter8" target="_blank" rel="noopener">@gestalter8</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- =====================================================
+         TICKER
+         ===================================================== -->
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker-track">
+        <!-- First copy -->
+        <span class="ticker-item">LANDING PAGES</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">AUTO BOOKING</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">LOCAL SEO</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">CLEAN CODE</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">7–14 DAYS</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">100% PAGESPEED</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">CALENDLY INTEGRATION</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">ZERO WORDPRESS</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">MOBILE FIRST</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">FAST AS HELL</span>
+        <span class="ticker-sep">·</span>
+        <!-- Duplicate for seamless loop -->
+        <span class="ticker-item">LANDING PAGES</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">AUTO BOOKING</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">LOCAL SEO</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">CLEAN CODE</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">7–14 DAYS</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">100% PAGESPEED</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">CALENDLY INTEGRATION</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">ZERO WORDPRESS</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">MOBILE FIRST</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">FAST AS HELL</span>
+        <span class="ticker-sep">·</span>
+      </div>
+    </div>
+
+    <!-- =====================================================
+         STATS
+         ===================================================== -->
+    <section id="stats" aria-label="Key numbers">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item reveal">
+            <div class="stat-num">7+</div>
+            <div class="stat-label">Projects delivered</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-1">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Client retention</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <div class="stat-num">&lt; 2s</div>
+            <div class="stat-label">Page load time</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <div class="stat-num">€0</div>
+            <div class="stat-label">Ad spend — only results</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SERVICES
+         ===================================================== -->
+    <section id="services" aria-labelledby="services-heading">
+      <div class="container">
+
+        <div class="services-header">
+          <div>
+            <p class="section-label reveal">// SERVICES</p>
+            <h2 id="services-heading" class="reveal reveal-delay-1">
+              Websites<br>that work.
+            </h2>
+          </div>
+          <p class="reveal reveal-delay-2">
+            One project at a time — full attention, no assembly line.
+            We take on a limited number of clients so nothing slips through.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <div class="service-card reveal">
+            <div class="service-num">01</div>
+            <h3>BUSINESS CARD SITE</h3>
+            <p>
+              Concise, lightning-fast site for specialists: lawyers,
+              doctors, coaches, craftsmen. Speaks for you before you do.
+            </p>
+            <div class="service-price">from €199</div>
+          </div>
+
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-num">02</div>
+            <h3>PREMIUM LANDING</h3>
+            <p>
+              Interactive design, full responsiveness, contact form
+              and automated booking calendar (Calendly / Cal.com).
+            </p>
+            <div class="service-price">from €299</div>
+          </div>
+
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-num">03</div>
+            <h3>MULTI-PAGE SITE</h3>
+            <p>
+              Multi-section websites for business, portfolio, catalog
+              or services. SEO-optimized from day one.
+            </p>
+            <div class="service-price">from €499</div>
+          </div>
+
+          <div class="service-card reveal reveal-delay-3">
+            <div class="service-num">04</div>
+            <h3>SUPPORT + SEO</h3>
+            <p>
+              Blazing-fast hosting, content updates, speed optimization,
+              local SEO and monthly reports. Always on, always current.
+            </p>
+            <div class="service-price">from €29 / mo</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         WORK
+         ===================================================== -->
+    <section id="work" aria-labelledby="work-heading">
+      <div class="container">
+
+        <div class="work-header">
+          <div>
+            <p class="section-label reveal">// WORK</p>
+            <h2 id="work-heading" class="reveal reveal-delay-1">
+              Sites already<br>working.
+            </h2>
+          </div>
+          <a href="https://t.me/gestalter8" class="work-more reveal reveal-delay-2" target="_blank" rel="noopener">
+            MORE COMING SOON →
+          </a>
+        </div>
+
+        <div class="work-grid">
+
+          <!-- Project 1 -->
+          <a href="https://dklve-fit.com" target="_blank" rel="noopener" class="work-card reveal" id="work-card-1" aria-label="Dmitry Kulish — Biomechanical Coaching">
+            <img
+              src="mock-kulish.png"
+              alt="Dmitry Kulish — Biomechanical Coaching landing page"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="work-card-static">
+              <span class="work-card-index">01</span>
+            </div>
+            <div class="work-card-info">
+              <div class="work-card-label">FITNESS · COACHING</div>
+              <div class="work-card-title">Dmitry Kulish</div>
+              <div class="work-card-tag">
+                ↗ Biomechanical coaching &amp; auto-booking
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 2 -->
+          <a href="https://calyx-app.com/" target="_blank" rel="noopener" class="work-card reveal reveal-delay-1" id="work-card-2" aria-label="Calix App — Minimalist Fitness Tracker">
+            <img
+              src="mock-calix.png"
+              alt="Calix App — Minimalist fitness tracker interface"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="work-card-static">
+              <span class="work-card-index">02</span>
+            </div>
+            <div class="work-card-info">
+              <div class="work-card-label">PRODUCT · APP</div>
+              <div class="work-card-title">Calix App</div>
+              <div class="work-card-tag">
+                ↗ Minimalist fitness tracker for athletes
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         PROCESS
+         ===================================================== -->
+    <section id="process" aria-labelledby="process-heading">
+      <div class="container">
+
+        <div class="process-header">
+          <div>
+            <p class="section-label reveal">// THE FORGE PROCESS</p>
+            <h2 id="process-heading" class="reveal reveal-delay-1">
+              Precise.<br>Strategic.<br>Delivered.
+            </h2>
+          </div>
+          <div class="process-header-right">
+            <p class="reveal reveal-delay-2">
+              We don't sprint through projects. We work on one at a time —
+              methodically, with full focus on your outcome.
+            </p>
+            <a href="https://t.me/gestalter8" class="btn-ghost reveal reveal-delay-3" target="_blank" rel="noopener" id="process-cta-btn">
+              GET YOUR QUOTE →
+            </a>
+          </div>
+        </div>
+
+        <div class="process-steps">
+
+          <div class="process-step reveal">
+            <span class="step-num">01</span>
+            <h3>BRIEF</h3>
+            <p>
+              A no-pressure conversation. We listen, ask sharp questions,
+              understand your audience and what you need the site to do.
+            </p>
+          </div>
+
+          <div class="process-step reveal reveal-delay-1">
+            <span class="step-num">02</span>
+            <h3>STRATEGY</h3>
+            <p>
+              We map your brand, your competition, and design a custom
+              roadmap. No generic solutions — every decision is intentional.
+            </p>
+          </div>
+
+          <div class="process-step reveal reveal-delay-2">
+            <span class="step-num">03</span>
+            <h3>BUILD</h3>
+            <p>
+              We design and code simultaneously, showing you previews as we
+              go. Clean HTML/CSS/JS — no bloated builders, no plugin hell.
+            </p>
+          </div>
+
+          <div class="process-step reveal reveal-delay-3">
+            <span class="step-num">04</span>
+            <h3>LAUNCH</h3>
+            <p>
+              Deploy, verify, done. Your site loads in under 2 seconds,
+              scores 100 on PageSpeed, and starts booking clients from day one.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         MANIFESTO
+         ===================================================== -->
+    <section id="manifesto" aria-labelledby="manifesto-heading">
+      <div class="container">
+        <div class="manifesto-inner">
+
+          <blockquote class="reveal">
+            "We were tired of watching local businesses overpay for
+            <em>Tilda templates renamed as 'custom design'</em>."
+          </blockquote>
+
+          <p class="manifesto-body reveal reveal-delay-1">
+            We're not an agency with a sales department running you through a script.
+            We're developers who once sat on the other side of the table and saw how
+            small businesses get sold bloated WordPress sites with 47 plugins —
+            slow, insecure, and impossible to update without breaking something.
+            <br><br>
+            Every site we build is written from scratch for a specific person and a
+            specific goal. No constructors. No ready-made blocks. No compromises.
+            We deliberately work with a small number of clients at once — not because
+            we can't handle more, but because we refuse to do worse work.
+            <br><br>
+            If you need a site fast and cheap — we're not your option.
+            If how you appear online actually matters to you — you already know what to do.
+          </p>
+
+          <p class="manifesto-sig reveal reveal-delay-2">— CORVUS FORGE STUDIO</p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         FAQ
+         ===================================================== -->
+    <section id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+
+        <div class="faq-header">
+          <div>
+            <p class="section-label reveal">// FAQ</p>
+            <h2 id="faq-heading" class="reveal reveal-delay-1">
+              Common<br>questions.
+            </h2>
+          </div>
+        </div>
+
+        <div class="faq-list" role="list">
+
+          <div class="faq-item reveal" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q-1">
+              <span>Why clean code instead of WordPress or Tilda?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
+              <div class="faq-answer-inner">
+                WordPress and Tilda sites are bloated with unnecessary plugins and template code.
+                We write everything by hand in pure HTML/CSS/JS. Our sites load in under 2 seconds,
+                score 100% on Google PageSpeed, and have no vulnerable plugin chain to exploit.
+                You own the code — no subscriptions, no lock-in.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-delay-1" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q-2">
+              <span>How does the auto-booking work?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
+              <div class="faq-answer-inner">
+                We integrate Calendly or Cal.com directly into your landing page. Visitors pick a
+                time slot, confirm, and get an automatic reminder — all without you lifting a finger.
+                You just show up for the appointment. Works for fitness coaches, beauty salons,
+                clinics, lawyers, and any appointment-based business.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-delay-2" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q-3">
+              <span>How long does it take?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
+              <div class="faq-answer-inner">
+                Typically 7 to 14 days from brief to launch. We run one project at a time,
+                so your task gets our full attention — not a slot between 12 other clients.
+                Timeline depends on scope and how fast you provide content (text, photos).
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-delay-3" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q-4">
+              <span>Can I edit the content myself after launch?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
+              <div class="faq-answer-inner">
+                Yes. We build clean, commented code and can set up a simple editing system.
+                You can change prices, descriptions, and photos without risking the design or
+                code structure. For ongoing updates, our Support + SEO plan covers it from €29/mo.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q-5">
+              <span>What's included in Support + SEO at €29/mo?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-a-5" role="region" aria-labelledby="faq-q-5">
+              <div class="faq-answer-inner">
+                Blazing-fast hosting, regular content updates, ongoing speed optimization,
+                local SEO management (Google Business, citations), and monthly performance reports.
+                Your site stays live, fast, and visible — always.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         CTA
+         ===================================================== -->
+    <section id="contact" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-inner">
+
+          <h2 id="cta-heading" class="reveal">
+            If how you appear online<br>
+            <em>actually matters to you</em> —<br>
+            you know what to do.
+          </h2>
+
+          <p class="reveal reveal-delay-1">
+            We work with a limited number of clients. If you're serious — let's talk.
+            Currently accepting <strong>2 projects</strong> for July.
+          </p>
+
+          <div class="cta-btns reveal reveal-delay-2">
+            <a href="https://t.me/gestalter8" class="btn-tg" target="_blank" rel="noopener" id="cta-main-btn">
+              <svg class="btn-tg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.02 9.52c-.147.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L6.26 14.4l-2.95-.924c-.64-.203-.654-.64.136-.948l11.526-4.446c.537-.194 1.006.131.59.166z"/>
+              </svg>
+              WRITE ON TELEGRAM
+            </a>
+          </div>
+
+          <p class="cta-footnote reveal reveal-delay-3">
+            @gestalter8 · Response within 24 hours
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-logo">
+          <img src="corvus-logo.png" alt="Corvus Forge" width="22" height="22" />
+          <span>CORVUS FORGE</span>
+        </div>
+
+        <p class="footer-copy">© 2026 Corvus Forge. Kyiv, Ukraine.</p>
+
+        <div class="footer-links">
+          <a href="https://t.me/gestalter8" target="_blank" rel="noopener" id="footer-tg">TELEGRAM</a>
+          <a href="https://www.instagram.com/corvus.forge/" target="_blank" rel="noopener" id="footer-ig">INSTAGRAM</a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=2"></script>
+
+</body>
+</html>

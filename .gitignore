@@ -1,0 +1,5 @@
+.gemini/
+.vscode/
+.system_generated/
+*.zip
+*.log
