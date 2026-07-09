@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Lockfiles and Agent directories
+package-lock.json
+.gemini/
+.system_generated/
+*.zip
