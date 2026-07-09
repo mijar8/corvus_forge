@@ -1,0 +1,56 @@
+/* ============================================================
+   STATS STYLE
+   ============================================================ */
+#stats {
+  padding: 5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.stat-item {
+  padding: 2.5rem var(--pad-x);
+  border-right: 1px solid var(--border);
+  position: relative;
+}
+.stat-item:first-child { border-left: 1px solid var(--border); }
+
+.stat-num {
+  font-family: var(--font-head);
+  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  font-weight: 300;
+  letter-spacing: -.03em;
+  color: var(--text);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  color: var(--text-2);
+  font-weight: 300;
+}
+
+/* ---------- Media Queries ---------- */
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stat-item:nth-child(2) { border-right: none; }
+  .stat-item:nth-child(3) { border-left: 1px solid var(--border); border-top: 1px solid var(--border); }
+  .stat-item:nth-child(4) { border-top: 1px solid var(--border); border-right: none; }
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+}

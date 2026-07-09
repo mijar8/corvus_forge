@@ -1,0 +1,22 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0B0C10"/>
+  <rect x="40" y="40" width="1120" height="550" rx="28" fill="url(#bg)" stroke="rgba(255,255,255,0.08)"/>
+  <path d="M1030 0C920 110 852 244 824 398C796 552 826 630 826 630H1200V0H1030Z" fill="url(#sheen)" opacity="0.35"/>
+  <path d="M120 468C230 342 382 276 576 270C741 264 902 320 1060 438" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+  <text x="96" y="166" fill="#8B93A7" font-family="Georgia, 'Times New Roman', serif" font-size="28" letter-spacing="7">CORVUS</text>
+  <text x="96" y="284" fill="#F2ECE2" font-family="Arial, Helvetica, sans-serif" font-size="84" font-weight="700">Digital products with</text>
+  <text x="96" y="370" fill="#F2ECE2" font-family="Georgia, 'Times New Roman', serif" font-size="88" font-style="italic">clarity and feeling.</text>
+  <text x="96" y="462" fill="#99A0B2" font-family="Arial, Helvetica, sans-serif" font-size="30">
+    Interfaces, websites, and digital tools shaped with clarity, taste, and intention.
+  </text>
+  <defs>
+    <linearGradient id="bg" x1="88" y1="82" x2="1126" y2="598" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12161C"/>
+      <stop offset="1" stop-color="#0B0C10"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="1010" y1="40" x2="1160" y2="534" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B7C4D8"/>
+      <stop offset="1" stop-color="#B7C4D8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>
