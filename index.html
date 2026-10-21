@@ -3,17 +3,233 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/favicon.png" type="image/png" />
+  <title>Corvus Forge — Custom Websites with Automated Booking for Local Businesses</title>
+  <meta name="description" content="Custom-coded landing pages with automated booking. No templates, no WordPress. Built for local businesses in 7-14 days." />
+  <link rel="canonical" href="https://corvus-forge.com/" />
+  <link rel="icon" href="./assets/favicon.png" type="image/png" />
 
-  <!-- Preloading Fonts for LCP optimization -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <!-- Trigger build -->
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://corvus-forge.com/" />
+  <meta property="og:title" content="Corvus Forge — Custom Websites with Automated Booking for Local Businesses" />
+  <meta property="og:description" content="Custom-coded landing pages with automated booking. No templates, no WordPress. Built for local businesses in 7-14 days." />
+  <meta property="og:image" content="./assets/og-image.svg" />
+  <meta property="og:site_name" content="Corvus Forge" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Corvus Forge — Custom Websites with Automated Booking for Local Businesses" />
+  <meta name="twitter:description" content="Custom-coded landing pages with automated booking. No templates, no WordPress. Built for local businesses in 7-14 days." />
+  <meta name="twitter:image" content="./assets/og-image.svg" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Corvus Forge",
+    "image": "https://corvus-forge.com/assets/corvus-logo.png",
+    "description": "Web studio building custom-coded landing pages with automated booking systems for local businesses.",
+    "url": "https://corvus-forge.com",
+    "priceRange": "$$",
+    "sameAs": [
+      "https://t.me/gestalter8",
+      "https://www.instagram.com/corvus.forge/"
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/lenis.min.js" defer></script>
+  <script src="./js/smoke.js" defer></script>
+  <script src="./js/main.js" defer></script>
 </head>
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- Floating Navigation Bar -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <div class="nav-links">
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#contact" class="nav-link">Process</a>
+    </div>
+
+    <a href="./index.html" class="nav-logo" aria-label="Corvus Forge">
+      <img src="./assets/corvus-logo.png" alt="Corvus Forge" width="16" height="16" />
+    </a>
+
+    <a href="https://t.me/gestalter8" target="_blank" rel="noopener noreferrer" class="nav-cta">
+      Let's talk →
+    </a>
+  </nav>
+
+  <main>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+      <canvas class="smoke-canvas" data-variant="1"></canvas>
+
+      <div class="hero-content">
+        <h1>
+          We forge sites that<br>
+          carry <em>identity.</em>
+        </h1>
+
+        <p class="hero-desc">
+          We take your idea from raw ore to finished steel: concept, design, and code, forged into one site built to last.
+        </p>
+
+        <div class="hero-cta">
+          <a href="https://t.me/gestalter8" class="btn btn-solid" target="_blank" rel="noopener noreferrer">
+            Get Started Now
+          </a>
+          <a href="#work" class="btn btn-glass">
+            See Projects
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Selected Work Section -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <canvas class="smoke-canvas" data-variant="2"></canvas>
+
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">// SELECTED WORK</span>
+          <h2 id="work-title">
+            Digital assets designed<br>
+            to <em>perform.</em>
+          </h2>
+        </header>
+
+        <div class="projects-list">
+
+          <!-- Project 1: Dmitry Kulish -->
+          <article class="project-item">
+            <header class="project-header reveal">
+              <span class="project-tag">01 // FITNESS · COACHING</span>
+              <h3>
+                <a href="https://dklve-fit.com" target="_blank" rel="noopener noreferrer">
+                  Dmitry Kulish <span class="arrow">↗</span>
+                </a>
+              </h3>
+              <p>Coaching platform with automated client intake. From first visit to booked session — zero manual follow-ups.</p>
+            </header>
+
+            <figure class="macbook-device">
+              <div class="macbook-frame">
+                <div class="macbook-topbar">
+                  <div class="bar-left">
+                    <span class="apple-icon"></span>
+                    <span class="bar-title">Dmitry Kulish</span>
+                  </div>
+                  <div class="camera-notch"><span class="lens"></span></div>
+                  <time class="bar-time">Mon Jun 10 9:41 AM</time>
+                </div>
+
+                <div class="macbook-screen">
+                  <div class="screen-scroll">
+                    <img src="./assets/mock-kulish.webp" alt="Dmitry Kulish site preview" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <div class="macbook-chin"><div class="chin-notch"></div></div>
+            </figure>
+          </article>
+
+          <!-- Project 2: Calix App -->
+          <article class="project-item">
+            <header class="project-header reveal">
+              <span class="project-tag">02 // PRODUCT · LANDING</span>
+              <h3>
+                <a href="https://calyx-app.com/" target="_blank" rel="noopener noreferrer">
+                  Calix App <span class="arrow">↗</span>
+                </a>
+              </h3>
+              <p>Launch page for a fitness tracking app. Scroll-driven storytelling, interactive demos, waitlist funnel.</p>
+            </header>
+
+            <figure class="macbook-device">
+              <div class="macbook-frame">
+                <div class="macbook-topbar">
+                  <div class="bar-left">
+                    <span class="apple-icon"></span>
+                    <span class="bar-title">Calix App</span>
+                  </div>
+                  <div class="camera-notch"><span class="lens"></span></div>
+                  <time class="bar-time">Mon Jun 10 9:41 AM</time>
+                </div>
+
+                <div class="macbook-screen">
+                  <div class="screen-scroll">
+                    <img src="./assets/mock-calix.webp" alt="Calix App site preview" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <div class="macbook-chin"><div class="chin-notch"></div></div>
+            </figure>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <footer class="contact" id="contact">
+      <canvas class="smoke-canvas" data-variant="2"></canvas>
+
+      <div class="container contact-box">
+        <div class="badge reveal">
+          <span class="dot"></span>
+          <span id="dynamic-spots">4/5 spots available</span>
+        </div>
+
+        <h2 class="reveal">
+          If how you appear online<br>
+          <em>actually matters to you</em> —<br>
+          you know what to do.
+        </h2>
+
+        <div class="reveal">
+          <a href="https://t.me/gestalter8" class="btn btn-glass" target="_blank" rel="noopener noreferrer">
+            Let's talk
+          </a>
+        </div>
+
+        <nav class="social-links reveal" aria-label="Social links">
+          <a href="https://t.me/gestalter8" target="_blank" rel="noopener noreferrer">Telegram</a>
+          <span class="sep">|</span>
+          <a href="https://www.instagram.com/corvus.forge/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </nav>
+
+        <div class="legal-bar">
+          <span>© 2026 Corvus Forge</span>
+          <span class="sep">·</span>
+          <a href="./pages/privacypolicy.html">Privacy Policy</a>
+          <span class="sep">·</span>
+          <a href="./pages/termsofuse.html">Terms of Use</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Interactive Trailing Cursor -->
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Cookie Consent Banner -->
+  <aside class="cookie-banner" id="cookie-banner" role="alert" aria-live="polite">
+    <p>We use cookies to improve your experience. By continuing, you agree to our <a href="./pages/privacypolicy.html">Privacy Policy</a>.</p>
+    <div class="cookie-buttons">
+      <button class="btn-cookie accept" id="cookie-accept">Accept</button>
+      <button class="btn-cookie decline" id="cookie-decline">Decline</button>
+    </div>
+  </aside>
+
 </body>
 </html>
