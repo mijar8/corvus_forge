@@ -3,29 +3,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 0. Smooth Momentum Scroll (Desktop only — zero touch interception on mobile)
-  const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || window.matchMedia('(pointer: coarse)').matches;
-  let lenis = null;
-
-  if (!isTouch && typeof Lenis !== 'undefined') {
-    lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      orientation: 'vertical',
-      smoothWheel: true,
-      wheelMultiplier: 1,
-      touchMultiplier: 0,
-      syncTouch: false,
-    });
-
-    const raf = (time) => {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    };
-    requestAnimationFrame(raf);
-  }
-
-  // Smooth scroll for internal anchor links
+  // 0. Smooth scroll for navigation links (native, zero libraries)
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', (e) => {
       const targetId = anchor.getAttribute('href');
@@ -33,11 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const target = document.querySelector(targetId);
         if (target) {
           e.preventDefault();
-          if (lenis) {
-            lenis.scrollTo(target, { offset: -20 });
-          } else {
-            target.scrollIntoView({ behavior: 'smooth' });
-          }
+          const navOffset = 70;
+          const targetPos = target.getBoundingClientRect().top + window.scrollY - navOffset;
+          window.scrollTo({ top: targetPos, behavior: 'smooth' });
         }
       }
     });
@@ -78,9 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
   window.addEventListener('scroll', updateMacbooks, { passive: true });
-  if (lenis) {
-    lenis.on('scroll', updateMacbooks);
-  }
   updateMacbooks();
 
   // 4. Smooth cursor glow
